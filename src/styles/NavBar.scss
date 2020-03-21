@@ -1,0 +1,23 @@
+@import './variables.scss';
+
+.NavBar {
+  background: rgba(0, 0, 0, 0.315);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  .navbar-light .navbar-brand {
+    margin-right: 0px;
+  }
+
+  a.section-link.nav-link {
+    color: white;
+    font-weight: lighter;
+    font-family: $ff2;
+    letter-spacing: 2px;
+
+    &:hover {
+      color: white;
+    }
+  }
+}

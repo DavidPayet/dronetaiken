@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro|Orbitron|Roboto&display=swap');
+
+$ff1: 'Roboto',
+sans-serif;
+$ff2: 'Maven Pro',
+sans-serif;
+$ff3: 'Orbitron',
+sans-serif;
+
+h1 {
+  font-family: $ff3;
+  padding-bottom: 80px;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
