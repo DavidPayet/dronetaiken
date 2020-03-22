@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import HomePage from './pages/HomePage';
 import BasketPage from './pages/BasketPage';
+import Footer from './components/Footer';
 import './App.scss';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
         <Route onUpdate={window.scrollTo(0, 0)} exact path="/" component={HomePage} />
         <Route onUpdate={window.scrollTo(0, 0)} exact path="/basket" component={BasketPage} />
       </Switch>
+      <Footer />
     </div>
   );
 };

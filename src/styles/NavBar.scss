@@ -1,23 +1,36 @@
 @import './variables.scss';
 
 .NavBar {
-  background: rgba(0, 0, 0, 0.315);
+  background: rgba(0, 0, 0, 0.212);
   position: fixed;
   width: 100%;
   z-index: 1;
 
   .navbar-light .navbar-brand {
     margin-right: 0px;
+    outline: none;
+  }
+
+  .navbar-light .navbar-toggler {
+    background: rgba(255, 255, 255, 0.171);
+    border: none;
+    outline: none;
+    .navbar-light .navbar-toggler-icon {
+      color: white;
+    }
   }
 
   a.section-link.nav-link {
     color: white;
-    font-weight: lighter;
     font-family: $ff2;
     letter-spacing: 2px;
 
     &:hover {
       color: white;
     }
+  }
+
+  .cart {
+    margin-right: 10px;
   }
 }
