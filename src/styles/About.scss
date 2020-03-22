@@ -5,7 +5,18 @@
   .about {
     color: rgb(58, 58, 58);
     min-height: 700px;
-    padding: 80px 0 80px 0;
+    padding: 80px 0px 80px 0px;
     background: rgb(255, 255, 255);
+
+    .row {
+      width: 100%;
+      margin: 0px;
+    }
+
+    .drone {
+      display: flex;
+      width: 100%;
+      height: auto;
+    }
   }
 }

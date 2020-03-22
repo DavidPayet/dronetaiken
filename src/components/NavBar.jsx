@@ -8,6 +8,7 @@ import {
   NavItem,
   NavLink,
 } from 'reactstrap';
+import { FiShoppingCart } from "react-icons/fi";
 
 import '../styles/NavBar.scss';
 
@@ -26,7 +27,10 @@ const NavBar = () => {
         <Collapse isOpen={isOpen} navbar className="flex flex-row-reverse">
           <Nav navbar >
             <NavItem >
-              <NavLink className="section-link" href="/basket" >Panier</NavLink>
+              <NavLink className="section-link" href="/basket" >
+              <FiShoppingCart className="cart"/>
+                Panier
+                </NavLink>
             </NavItem>
             <NavItem >
               <NavLink className="section-link" href="/basket" >Connexion</NavLink>
