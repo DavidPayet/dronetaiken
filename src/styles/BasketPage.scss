@@ -1,8 +1,25 @@
 @import './variables.scss';
 
 .BasketPage {
+  background-color: rgb(247, 249, 250);
   min-height: 700px;
-  background: white;
-  padding-top: 80px;
-  font-family: $ff3;
+  padding: 80px 0 80px 0;
+  font-family: $ff2;
+  color: rgb(58, 58, 58);
+
+  h1 {
+    font-family: $ff2;
+  }
+
+  .basketPage {
+
+    .row {
+      border-bottom: 1px solid rgba(58, 58, 58, 0.171);
+    }
+
+    p {
+      float: left;
+      font-size: 15px;
+    }
+  }
 }

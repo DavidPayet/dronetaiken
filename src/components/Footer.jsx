@@ -9,8 +9,7 @@ const Footer = () => {
       <Container className="footer">
         <Row>
           <Col xl="12" lg="12" md="12" sm="12" xs="12">
-            {/* eslint-disable-next-line*/}
-            footer 👞
+            <p>©2020 | <span>dronetaiken</span></p>
           </Col>
         </Row>
       </Container>

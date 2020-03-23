@@ -11,9 +11,7 @@ const Products = () => {
   return (
     <div className="Shop">
       <h1>Boutique</h1>
-
       <DroneList listDrones={drone} />
-
     </div >
   );
 };
