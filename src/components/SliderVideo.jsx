@@ -8,13 +8,13 @@ import '../styles/SliderVideo.scss';
 
 const items = [
   {
-    src: 'https://res.cloudinary.com/dq39faoo1/video/upload/v1584977023/video_drone1_hb5dtm.mp4'
+    src: 'https://res.cloudinary.com/dq39faoo1/video/upload/c_scale,w_1920/v1584995782/video-5_vdwtpu.mp4'
   },
   {
-    src: 'https://res.cloudinary.com/dq39faoo1/video/upload/v1584977031/video_drone4_ceekyg.mp4'
+    src: 'https://res.cloudinary.com/dq39faoo1/video/upload/c_scale,w_1920/v1584995779/video-3_mqyl91.mp4'
   },
   {
-    src: 'https://res.cloudinary.com/dq39faoo1/video/upload/v1584976799/video_drone2_mh4d19.mp4'
+    src: 'https://res.cloudinary.com/dq39faoo1/video/upload/v1584995763/video_outku5.mp4'
   }
 ];
 
@@ -64,7 +64,7 @@ const SliderVideo = (props) => {
 };
 
 Carousel.defaultProps = {
-  interval: 12000,
+  interval: 13000,
   ride: 'carousel',
   pause: false,
   keyboard: true,
