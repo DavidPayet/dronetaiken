@@ -12,7 +12,7 @@ const App = () => {
       <NavBar />
       <Switch>
         <Route onUpdate={window.scrollTo(0, 0)} exact path="/" component={HomePage} />
-        <Route onUpdate={window.scrollTo(0, 0)} exact path="/basket" component={BasketPage} />
+        <Route onUpdate={window.scrollTo(0, 0)} exact path="/panier" component={BasketPage} />
       </Switch>
       <Footer />
     </div>
