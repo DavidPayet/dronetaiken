@@ -14,11 +14,11 @@ const About = () => {
             <br />
             <p>Que ce soit en télépilotage à vue direct, en vol immersif par vidéotransmission ou même en autopilotage par reconnaissance visuelle ou GPS,
             <br />
-            Vivez des expériences photos et videos uniques.</p>
+            Vivez des expériences photos et videos uniques !</p>
             <br />
-            <p>Les prises de vue inédites et spectaculaires permettent aux drones d'être déployés dans de nombreux domaines d'application.</p>
+            <p>Grâce à sa capacité de prises de vue inédites et spectaculaires, le drone a voccation à être employer dans de nombreux domaines d'application.</p>
             <br />
-            <p>Voyez votre monde d'un nouvel œil avec <span>DRONE TAIKEN</span>.</p>
+            <p>Voyez le monde d'un nouvel œil avec <span>DRONE TAIKEN</span>.</p>
           </Col>
           <Col className="d-none d-sm-block" xl="2" lg="2" md="2" sm="12" xs="12">
             <img className="drone" src="/medias/drone1.png" alt="Drone" />
