@@ -27,13 +27,10 @@ const NavBar = () => {
         <Collapse isOpen={isOpen} navbar className="flex flex-row-reverse">
           <Nav navbar >
             <NavItem >
-              <NavLink className="section-link" href="/basket" >
+              <NavLink className="section-link" href="/panier" >
               <FiShoppingCart className="cart"/>
                 Panier
                 </NavLink>
-            </NavItem>
-            <NavItem >
-              <NavLink className="section-link" href="/basket" >Connexion</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
