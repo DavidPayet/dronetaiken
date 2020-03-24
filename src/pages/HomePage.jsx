@@ -8,12 +8,11 @@ const HomePage = () => {
   return (
     <div className="HomePage" id="up-page">
       <div className="vidUp">
-      <video autoPlay loop src="https://res.cloudinary.com/dq39faoo1/video/upload/v1585004145/Pexels_Videos_1409899_ua2ofj.mp4" alt="Drone Video" className="vid1" />
+        <video autoPlay loop src="https://res.cloudinary.com/dq39faoo1/video/upload/v1585004145/Pexels_Videos_1409899_ua2ofj.mp4" alt="Drone Video" className="vid1" />
       </div>
-      <About />
-      
+        <About />
       <div className="vidCenter">
-      <video autoPlay loop src="https://res.cloudinary.com/dq39faoo1/video/upload/v1585003863/video_drone_yt7ppf.mp4" alt="Drone Video" className="vid2" />
+        <video autoPlay loop src="https://res.cloudinary.com/dq39faoo1/video/upload/v1585003863/video_drone_yt7ppf.mp4" alt="Drone Video" className="vid2" />
       </div>
       <Shop />
       <BackToTopBtn />
