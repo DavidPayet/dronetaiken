@@ -1,12 +1,13 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import '../styles/BasketPage.scss';
+import '../styles/CartPage.scss';
+import Cart from '../components/Cart';
 
-const BasketPage = () => {
+const CartPage = () => {
   return (
-    <div className="BasketPage">
+    <div className="CartPage">
       <h1>Mon Panier</h1>
-      <Container className="basketPage">
+      <Container className="cartPage">
         <Row>
           <Col className="d-none d-sm-block" xl="5" lg="5" md="5" sm="5" xs="5">
             <p>Article</p>
@@ -25,9 +26,9 @@ const BasketPage = () => {
           </Col>
         </Row>
       </Container>
-      
+      <Cart stripeToken="pk_test_26Vvf0pzpHPKILQtnddTAN3R" />
     </div>
   )
 };
 
-export default BasketPage;
+export default CartPage;
