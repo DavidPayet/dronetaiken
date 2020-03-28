@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
+import CartProvider from './context';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,7 +10,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <CartProvider>
+      <App />
+    </CartProvider>
   </BrowserRouter>,
   document.getElementById('root'));
 

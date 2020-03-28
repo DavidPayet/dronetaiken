@@ -1,0 +1,41 @@
+@import './variables.scss';
+
+.Cart {
+  background-color: rgb(247, 249, 250);
+  min-height: 700px;
+  padding: 40px 0 40px 0;
+  font-family: $ff2;
+  color: rgb(58, 58, 58);
+
+  .cart {
+
+    .row {
+      border-bottom: 1px solid rgba(58, 58, 58, 0.171);
+    }
+
+    p {
+      float: left;
+      font-size: 15px;
+    }
+  }
+
+  .checkout {
+    .total {
+      float: right;
+      font-size: 22px;
+    }
+    .checkoutBtn {
+      float: right;
+      margin-bottom: 20px;
+      background: linear-gradient(145deg, #2b8a7e, #33a496);
+      font-family: $ff2;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: inset 15px 15px 30px #19514a,
+          inset -15px -15px 30px #47e1ce;
+      }
+    }
+  }
+}

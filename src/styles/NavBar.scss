@@ -15,15 +15,18 @@
     background: rgba(255, 255, 255, 0.171);
     border: none;
     outline: none;
+
     .navbar-light .navbar-toggler-icon {
       color: white;
     }
   }
 
-  a.section-link.nav-link {
+  a.section-link {
     color: white;
     font-family: $ff2;
     letter-spacing: 2px;
+    outline: none;
+    text-decoration: none;
 
     &:hover {
       color: white;
