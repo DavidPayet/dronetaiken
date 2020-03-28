@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
+import { MdDeleteForever } from "react-icons/md";
+
 import { CartContext } from '../context';
 
 import '../styles/Cart.scss';
@@ -38,26 +40,28 @@ const Cart = ({ stripeToken }) => {
 
         {ctx.items.map(item => (
           <Row key={item.sku}>
-            <Col xl="5" lg="5" md="5" sm="5" xs="5">
+            <Col className="colone" xl="3" lg="3" md="3" sm="12" xs="12">
+            <p>{item.name}</p>
+            </Col>
+            <Col className="colone" xl="2" lg="2" md="2" sm="12" xs="12">
               <img
                 src={`/medias/${item.sku}.jpg`}
                 alt={item.name}
                 width={100}
+                height={100}
               />
-
-              <p>{item.name}</p>
             </Col>
-            <Col xl="2" lg="2" md="2" sm="2" xs="2">
+            <Col className="colone" xl="2" lg="2" md="2" sm="12" xs="12">
               <p>{formatPrice(item.price)}</p>
             </Col>
-            <Col xl="2" lg="2" md="2" sm="2" xs="2">
+            <Col className="colone" xl="2" lg="2" md="2" sm="12" xs="12">
               <p>{item.quantity}</p>
             </Col>
-            <Col xl="2" lg="2" md="2" sm="2" xs="2">
+            <Col className="colone" xl="2" lg="2" md="2" sm="12" xs="12">
               <p>{formatPrice(item.price * item.quantity)}</p>
             </Col>
-            <Col xl="1" lg="1" md="1" sm="1" xs="1">
-              <p>U</p>
+            <Col className="colone" xl="1" lg="1" md="1" sm="12" xs="12">
+              <MdDeleteForever className="deleteBtn"/>
             </Col>
           </Row>
         ))}
