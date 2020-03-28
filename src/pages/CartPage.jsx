@@ -21,9 +21,7 @@ const CartPage = () => {
           <Col className="d-none d-sm-block" xl="2" lg="2" md="2" sm="2" xs="2">
             <p>Prix</p>
           </Col>
-          <Col className="d-none d-sm-block" xl="1" lg="1" md="1" sm="1" xs="1">
-            <p>U</p>
-          </Col>
+          <Col className="d-none d-sm-block" xl="1" lg="1" md="1" sm="1" xs="1" />
         </Row>
       </Container>
       <Cart stripeToken="pk_test_26Vvf0pzpHPKILQtnddTAN3R" />

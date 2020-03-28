@@ -11,18 +11,31 @@
 
     .row {
       border-bottom: 1px solid rgba(58, 58, 58, 0.171);
+      padding-bottom: 20px;
+      padding-top: 20px;
     }
 
-    p {
-      float: left;
-      font-size: 15px;
+    .colone {
+      justify-content: center;
+      align-items: center;
+      display: flex;
     }
+    p {
+      font-size: 15px;
+      
+    }
+
+    .deleteBtn {
+      font-size: 25px;
+      margin-bottom: 16px;
   }
+}
 
   .checkout {
     .total {
       float: right;
       font-size: 22px;
+      padding-top: 40px;
     }
     .checkoutBtn {
       float: right;
@@ -31,6 +44,7 @@
       font-family: $ff2;
       border: none;
       cursor: pointer;
+      margin-top: 40px;
 
       &:hover {
         box-shadow: inset 15px 15px 30px #19514a,
