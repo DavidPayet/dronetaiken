@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
-import { MdDeleteForever } from "react-icons/md";
+//import { MdDeleteForever } from "react-icons/md";
 
 import { CartContext } from '../context';
 
@@ -17,11 +17,11 @@ const totalPrice = (items) => {
 
 const Cart = ({ stripeToken }) => {
   const [stripe, setStripe] = useState(null);
-  const ctx = useContext(CartContext)
+  const ctx = useContext(CartContext);
 
   useEffect(() => {
     if (window.Stripe) setStripe(window.Stripe(stripeToken))
-  }, [stripeToken])
+  }, [stripeToken]);
 
   const checkout = () => {
     stripe.redirectToCheckout({
@@ -32,7 +32,8 @@ const Cart = ({ stripeToken }) => {
       successUrl: "https://dronetaiken.netlify.com/success",
       cancelUrl: "https://dronetaiken.netlify.com/panier"
     })
-  }
+  };
+
 
   return (
     <div className="Cart">
@@ -61,7 +62,9 @@ const Cart = ({ stripeToken }) => {
               <p>{formatPrice(item.price * item.quantity)}</p>
             </Col>
             <Col className="colone" xl="1" lg="1" md="1" sm="12" xs="12">
-              <MdDeleteForever className="deleteBtn"/>
+              {/* <Button className="deleteBtn" onClick={handleDelete}>
+              <MdDeleteForever  />
+              </Button> */}
             </Col>
           </Row>
         ))}

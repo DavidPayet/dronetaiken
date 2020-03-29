@@ -5,7 +5,7 @@ import Cart from '../components/Cart';
 
 const CartPage = () => {
   return (
-    <div className="CartPage">
+    <div className="CartPage" onClick={window.scrollTo(0, 0)}>
       <h1>Mon Panier</h1>
       <Container className="cartPage">
         <Row>

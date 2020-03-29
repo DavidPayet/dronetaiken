@@ -20,16 +20,22 @@
       align-items: center;
       display: flex;
     }
+
     p {
       font-size: 15px;
-      
+
     }
 
     .deleteBtn {
+      border: none;
+      background: none;
+      color: rgb(58, 58, 58);
+      padding: 0;
+      outline: none;
       font-size: 25px;
       margin-bottom: 16px;
+    }
   }
-}
 
   .checkout {
     .total {
@@ -37,6 +43,7 @@
       font-size: 22px;
       padding-top: 40px;
     }
+
     .checkoutBtn {
       float: right;
       margin-bottom: 20px;
