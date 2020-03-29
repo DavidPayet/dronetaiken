@@ -31,7 +31,7 @@ const NavBar = () => {
         <Collapse isOpen={isOpen} navbar className="flex flex-row-reverse">
           <Nav navbar >
             <NavItem >
-              <Link className="section-link" to="/panier" >
+              <Link className="section-link" to="/panier">
                 <FiShoppingCart className="cart" />
                 Panier ({numItems})
               </Link>
