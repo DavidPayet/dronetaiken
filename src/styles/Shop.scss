@@ -16,6 +16,11 @@
 
     &:hover {
       box-shadow: 5px 5px 12px -14px rgba(0, 0, 0, 0.75);
+
+      .card-img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
     }
 
 
@@ -23,6 +28,10 @@
       width: 100%;
       height: 200px;
       padding: 40px;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .7s ease-in-out;
+      transition: .7s ease-in-out;
     }
 
     .card-title {
