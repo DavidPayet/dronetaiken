@@ -1,12 +1,17 @@
 import React, { useState, createContext } from 'react';
 
-export const CartContext = createContext(null);
+export const CartContext = createContext();
 
 const CartProvider = ({ children }) => {
   const [items, setItems] = useState([]);
 
   const addToCart = (item) => {
     setItems(prevState => [...prevState, item])
+    console.log(item)
+  }
+
+  const removeToCart = (sku) => {
+    setItems(prevState => prevState.filter( item => item.sku !== sku ))
   }
 
   const itemsWithQuantities = (items) => {
@@ -30,7 +35,8 @@ const CartProvider = ({ children }) => {
       value={{
         items: itemsWithQuantities(items),
         itemsCount: items.length,
-        addToCart
+        addToCart,
+        removeToCart
       }}
     >
       {children}

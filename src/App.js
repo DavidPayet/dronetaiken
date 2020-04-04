@@ -11,8 +11,8 @@ const App = () => {
     <div className="App">
       <NavBar />
       <Switch>
-        <Route onUpdate={window.scrollTo(0, 0)} exact path="/" component={HomePage} />
-        <Route onUpdate={window.scrollTo(0, 0)} exact path="/panier" component={CartPage} />
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/panier" component={CartPage} />
       </Switch>
       <Footer />
     </div>

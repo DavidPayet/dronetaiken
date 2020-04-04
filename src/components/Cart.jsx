@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
-//import { MdDeleteForever } from "react-icons/md";
+import { MdDeleteForever } from "react-icons/md";
 
 import { CartContext } from '../context';
 
@@ -34,11 +34,9 @@ const Cart = ({ stripeToken }) => {
     })
   };
 
-
   return (
-    <div className="Cart">
-      <Container className="cart">
-
+    <div className="Cart" >
+      <Container className="cart" >
         {ctx.items.map(item => (
           <Row key={item.sku}>
             <Col className="colone" xl="3" lg="3" md="3" sm="12" xs="12">
@@ -62,9 +60,9 @@ const Cart = ({ stripeToken }) => {
               <p>{formatPrice(item.price * item.quantity)}</p>
             </Col>
             <Col className="colone" xl="1" lg="1" md="1" sm="12" xs="12">
-              {/* <Button className="deleteBtn" onClick={handleDelete}>
+              <Button className="deleteBtn" onClick={() => ctx.removeToCart(item.sku)}>
               <MdDeleteForever  />
-              </Button> */}
+              </Button>
             </Col>
           </Row>
         ))}

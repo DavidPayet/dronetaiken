@@ -6,7 +6,7 @@ import '../styles/HomePage.scss';
 
 const HomePage = () => {
   return (
-    <div className="HomePage" id="up-page">
+    <div className="HomePage" id="up-page" onClick={window.scrollTo(0, 0)}>
       <div className="vidUp">
         <video autoPlay loop src="https://res.cloudinary.com/dq39faoo1/video/upload/v1585004145/Pexels_Videos_1409899_ua2ofj.mp4" alt="Drone Video" className="vid1" />
       </div>

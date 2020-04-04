@@ -3,7 +3,6 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem
 } from 'reactstrap';
@@ -24,9 +23,9 @@ const NavBar = () => {
   return (
     <div className="NavBar">
       <Navbar light expand="md">
-        <NavbarBrand href="/">
+        <Link to="/">
           <img src="/medias/logo_drone3.png" alt="logo" className="logo" />
-        </NavbarBrand>
+        </Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar className="flex flex-row-reverse">
           <Nav navbar >
