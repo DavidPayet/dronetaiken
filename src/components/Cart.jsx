@@ -40,7 +40,7 @@ const Cart = ({ stripeToken }) => {
         {ctx.items.map(item => (
           <Row key={item.sku}>
             <Col className="colone" xl="3" lg="3" md="3" sm="12" xs="12">
-            <p>{item.name}</p>
+              <p>{item.name}</p>
             </Col>
             <Col className="colone" xl="2" lg="2" md="2" sm="12" xs="12">
               <img
@@ -61,7 +61,7 @@ const Cart = ({ stripeToken }) => {
             </Col>
             <Col className="colone" xl="1" lg="1" md="1" sm="12" xs="12">
               <Button className="deleteBtn" onClick={() => ctx.removeToCart(item.sku)}>
-              <MdDeleteForever  />
+                <MdDeleteForever />
               </Button>
             </Col>
           </Row>

@@ -11,7 +11,7 @@ const CartProvider = ({ children }) => {
   }
 
   const removeToCart = (sku) => {
-    setItems(prevState => prevState.filter( item => item.sku !== sku ))
+    setItems(prevState => prevState.filter(item => item.sku !== sku))
   }
 
   const itemsWithQuantities = (items) => {
