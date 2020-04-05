@@ -1,0 +1,31 @@
+.EmptyCart {
+
+  .shopLink {
+    margin-right: 20px;
+
+    .arrow {
+      color: #2b8a7e;
+      font-size: 30px;
+      animation: Flash 1s infinite;
+    }
+
+    @keyframes Flash {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .aiShop {
+      color: #2b8a7e;
+      font-size: 45px;
+    }
+  }
+}

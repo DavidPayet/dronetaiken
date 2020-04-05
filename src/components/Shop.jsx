@@ -18,7 +18,8 @@ const formatPrice = (price) => {
 const Shop = () => {
   const cartCtx = useContext(CartContext)
   return (
-    <div className="Shop">
+    <div className="Shop" id="shop-section">
+      <h1>Notre Sélection</h1>
       <Container>
         <Row>
           {products.map(product => (
