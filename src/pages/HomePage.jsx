@@ -9,20 +9,19 @@ const HomePage = () => {
     <div className="HomePage" id="up-page" >
       <div className="vidUp">
         <video
-          autoplay="true" 
-          muted="muted"
+          autoPlay
+          muted
           loop
+          src="https://res.cloudinary.com/dq39faoo1/video/upload/v1585004145/Pexels_Videos_1409899_ua2ofj.mp4"
           alt="Drone Video"
           className="vid1"
-          src="https://res.cloudinary.com/dq39faoo1/video/upload/v1585004145/Pexels_Videos_1409899_ua2ofj.mp4"
-          type="video/mp4"
         />
       </div>
       <About />
       <div className="vidCenter">
         <video
-          autoplay="true" 
-          muted="muted"
+          autoPlay
+          muted
           loop
           src="https://res.cloudinary.com/dq39faoo1/video/upload/v1585003863/video_drone_yt7ppf.mp4"
           alt="Drone Video"
